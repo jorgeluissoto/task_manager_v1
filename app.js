@@ -11,7 +11,16 @@ app.get('/hello', (req,res)=>{
   res.send('Task Manager App')
 })
 
+// get all the tasks
 app.use('/api/v1/tasks', tasks)
+// create a new task
+app.post('/api/v1/tasks')
+// get single task
+app.get('/api/v1/tasks/:id')
+// update task
+app.patch('/api/v1/tasks/:id')
+// delete tasks
+app.delete('/api/v1/tasks/:id')
 
 
 
